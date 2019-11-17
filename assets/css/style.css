@@ -17,6 +17,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    margin: 40px 0;
+    
+    background-color: #e5e5e5;
+}
+
 
 /* Container */
 .container {
@@ -230,10 +240,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 80px 0;
 }
 
+.section--devices {
+    margin-bottom: 40px;
+    padding-bottom:0 ;
+    background: url(../images/forest_02.jpg)center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
 .section_header {
     width: 100%;
     max-width: 950%;
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
 
     text-align: center;
 }
@@ -355,4 +373,131 @@ h1, h2, h3, h4, h5, h6 {
 .stat_text {
     font-size: 14px;
     text-transform: uppercase;
+}
+
+.services {
+    display: flex;
+}
+
+.services_item {
+    flex:1 1 0;
+    padding-left: 85px;
+    padding-right: 35px;
+    position: relative;
+}
+
+.services_icon {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    z-index: 1;
+} 
+
+.services_title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.services_text {
+    font-size: 15px;
+    color: #999;
+}
+
+.devices {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto ;
+    position: relative;
+}
+
+.devices_item {
+    display: block;
+}
+
+.devices_item--iphone {
+    position: absolute;
+    bottom: -55px;
+    right:0;
+    z-index: 1;
+}
+
+.wedo{
+    display: flex;
+}
+
+.wedo_item {
+    width: 50%;
+}
+
+.accordion_item {
+    margin-bottom: 10px;
+    border: 0.1px solid #e5e5e5;
+}
+
+.accordion_header {
+    padding: 15px 20px 15px 60px;
+    position: relative;
+    border-bottom: 1px solid transparen;
+    cursor: pointer;
+}
+
+.accordion_icon{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.accordion_title {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
+}
+
+.accordion_content{
+    padding: 15px 20px;
+
+    display: none;
+
+    font-size: 15px;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.accordion_item.active
+.accordion_content {
+    display: block;
+}
+
+.accordion_item.active
+.accordion_header {
+    border-bottom-color:#e5e5e5;
+}
+
+.accordion_item.active
+.accordion_header:after {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.accordion_header:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top:2px solid #ccc;
+    border-right:2px solid #ccc;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%) rotate(135deg);   
 }
