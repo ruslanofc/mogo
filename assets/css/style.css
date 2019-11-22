@@ -633,4 +633,13 @@ hr {
 .logos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.works {
+    display: flex;
+}
+
+.works_col {
+    flex: 1 1 0;
 }
